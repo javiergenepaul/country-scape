@@ -4,9 +4,27 @@ function App() {
 
     return (
         <div className="App">
-            <h1 className="text-3xl font-bold underline">
-                Hello world!
-            </h1>
+            <div className="max-w-[1180px] mx-auto ">
+                Nav
+            </div>
+            <div className="">
+                Hero
+            </div>
+            <div className="">
+                Room
+            </div>
+            <div className="">
+                Discovery
+            </div>
+            <div className="">
+                Blog
+            </div>
+            <div className="">
+                Testimonial
+            </div>
+            <div className="">
+                Footer
+            </div>
         </div>
     )
 }
