@@ -1,9 +1,8 @@
 
 
 function App() {
-
     return (
-        <div className="App">
+        <div className="App font-inter">
             <div className="max-w-[1180px] mx-auto ">
                 Nav
             </div>
