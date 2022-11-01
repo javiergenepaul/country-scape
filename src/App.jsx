@@ -21,11 +21,12 @@ function App() {
                     <Nav />
                 </div>
             </div>
-            <div className="bg-primary-3 h-screen relative">
+            <div className="bg-primary-3 h-screen relative bg-hero bg-right bg-no-repeat">
+                {/* <div className='absolute right-0 w-[45%] bg-hero h-full bg-cover'></div> */}
+                {/* <img src={hero_background_image} className="fixed right-0  z-0" alt="" /> */}
                 <div className="max-w-[1180px] mx-auto">
                     <Hero />
                 </div>
-                <div className='absolute right-0 w-[45%] bg-hero h-full bg-cover z-0'></div>
 
             </div>
             <div className="">

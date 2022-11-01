@@ -6,6 +6,8 @@ import Testimonial from './Testimonial'
 import Blog from './Blog'
 import Footer from './Footer'
 
+import PrimaryBtn from './UI/PrimaryBtn'
+
 export {
     Nav,
     Hero,
@@ -13,5 +15,6 @@ export {
     Discover,
     Testimonial,
     Blog,
-    Footer
+    Footer,
+    PrimaryBtn
 }
