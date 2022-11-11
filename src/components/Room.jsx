@@ -18,10 +18,10 @@ function Room() {
 					{/* <div className="bg-primary-1 row-span-2 col-span-2 h-full rounded">sample</div> */}
 					<img src={room_1} className="row-span-2 col-span-2 rounded object-cover w-full h-full" alt="" />
 					<img src={room_2} className="rounded h-full w-full" alt="" />
-					<img src={room_2} className="rounded h-full w-full" alt="" />
-					<img src={room_2} className="rounded h-full w-full" alt="" />
-					<img src={room_2} className="rounded h-full w-full" alt="" />
-					<img src={room_2} className="rounded h-full w-full" alt="" />
+					<img src={room_3} className="rounded h-full w-full" alt="" />
+					<img src={room_4} className="rounded h-full w-full" alt="" />
+					<img src={room_5} className="rounded h-full w-full" alt="" />
+					<img src={room_6} className="rounded h-full w-full" alt="" />
 					{/* <div className="bg-primary-1 rounded">sample</div>
 			<div className="bg-primary-1 rounded">sample</div>
 			<div className="bg-primary-1 rounded">sample</div>

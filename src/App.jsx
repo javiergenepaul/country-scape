@@ -29,8 +29,10 @@ function App() {
             <div className="h-screen max-w-[1180px] mx-auto py-24">
                 <Room />
             </div>
-            <div className="">
-                Discovery
+            <div className="h-screen bg-discovery bg-cover relative">
+                <div className="h-full w-full bg-shade">
+                    <Discover />
+                </div>
             </div>
             <div className="">
                 Blog
