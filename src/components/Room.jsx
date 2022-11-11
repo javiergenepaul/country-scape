@@ -12,7 +12,7 @@ import PrimaryButton from './UI/PrimaryBtn'
 
 function Room() {
 	return (
-		<div className="flex">
+		<div className="flex gap-[100px]">
 			<div className="basis-1/2">
 				<div className='grid grid-cols-3 grid-rows-3 gap-5 h-full'>
 					{/* <div className="bg-primary-1 row-span-2 col-span-2 h-full rounded">sample</div> */}
@@ -31,12 +31,12 @@ function Room() {
 			</div>
 			<div className="basis-1/2">
 				<div className="items-center">
-					<span>
+					<h3 className='text-h2 font-semibold'>
 						Outstanding rooms and design for you to show.
-					</span>
-					<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque habitant praesent morbi gravida place rat.</span>
-					<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque habitant praesent morbi gravida place rat. Consectetur adipiscing elit.</span>
-					<PrimaryButton />
+					</h3>
+					<p className='text-body-large'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque habitant praesent morbi gravida place rat.</p>
+					<p className='text-body-large mt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque habitant praesent morbi gravida place rat. Consectetur adipiscing elit.</p>
+					<PrimaryButton style={'mt-10'} btnText={'Explore Rooms'} />
 				</div>
 			</div>
 		</div>
