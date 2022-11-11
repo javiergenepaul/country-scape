@@ -11,6 +11,11 @@ import room_4 from './rooms/room_4.png'
 import room_5 from './rooms/room_5.png'
 import room_6 from './rooms/room_6.png'
 
+import facebook from './icons/facebook.svg'
+import instagram from './icons/instagram.svg'
+import linkin from './icons/linkin.svg'
+import twitter from './icons/twitter.svg'
+
 
 export {
     countryscape_logo,
@@ -23,5 +28,9 @@ export {
     room_3,
     room_4,
     room_5,
-    room_6
+    room_6,
+    facebook,
+    instagram,
+    linkin,
+    twitter
 }

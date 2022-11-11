@@ -15,7 +15,6 @@ import { hero_background_image } from './assets'
 function App() {
     return (
         <div className="App font-inter relative">
-          
             <div className='p-[14px] bg-primary-1 text-primary-4 items-center absolute top-0 w-full z-10'>
                 <div className="max-w-[1180px] mx-auto">
                     <Nav />
@@ -31,17 +30,21 @@ function App() {
             </div>
             <div className="h-screen bg-discovery bg-cover relative">
                 <div className="h-full w-full bg-shade">
-                    <Discover />
+                    <div className="max-w-[1180px] mx-auto w-full h-full">
+                        <Discover />
+                    </div>
                 </div>
             </div>
-            <div className="">
+            <div className="max-w-[1180px] mx-auto w-full py-24">
                 Blog
             </div>
             <div className="">
                 Testimonial
             </div>
-            <div className="">
-                Footer
+            <div className="py-10 bg-primary-1">
+                <div className="max-w-[1180px] mx-auto w-full h-full">
+                    <Footer/>
+                </div>
             </div>
         </div>
     )

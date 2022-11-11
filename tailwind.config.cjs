@@ -15,11 +15,9 @@ module.exports = {
 			h2: "38px",
 			h3: "28px",
 			subheading: "21px",
-			body: {
-				large: "18px",
-				normal: "16px",
-				small: "14px"
-			},
+			"body-large": "18px",
+			"body-normal": "16px",
+			"body-small": "14px",
 			button: "15px",
 		},
 		colors: {
@@ -45,5 +43,7 @@ module.exports = {
 			}
 		},
 	},
-	plugins: [],
+	plugins: [
+		require('@tailwindcss/line-clamp'),
+	],
 }
