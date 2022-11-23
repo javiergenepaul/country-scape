@@ -8,7 +8,6 @@ function PrimaryBtn({
 
   let icon;
   if (btnIcon) {
-    console.log("has icon");
     icon = <span>{btnIcon}</span>;
   } else {
     icon = "";

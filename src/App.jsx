@@ -36,7 +36,7 @@ function App() {
                 </div>
             </div>
             <div className="max-w-[1180px] mx-auto w-full py-24">
-                Blog
+                <Blog />
             </div>
             <div className="">
                 Testimonial

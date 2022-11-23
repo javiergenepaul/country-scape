@@ -15,6 +15,12 @@ import facebook from './icons/facebook.svg'
 import instagram from './icons/instagram.svg'
 import linkin from './icons/linkin.svg'
 import twitter from './icons/twitter.svg'
+import ArrowNarrowRightOutline from './icons/ArrowNarrowRightOutline.svg'
+import ArrowNarrowLeftOutline from './icons/ArrowNarrowLeftOutline.svg'
+
+import blog1 from './blog/blog1.png'
+import blog2 from './blog/blog2.png'
+import blog3 from './blog/blog3.png'
 
 
 export {
@@ -32,5 +38,10 @@ export {
     facebook,
     instagram,
     linkin,
-    twitter
+    twitter,
+    blog1,
+    blog2,
+    blog3,
+    ArrowNarrowRightOutline,
+    ArrowNarrowLeftOutline
 }
