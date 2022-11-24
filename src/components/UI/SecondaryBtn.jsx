@@ -1,6 +1,6 @@
 import React from 'react'
 
-function PrimaryBtn({
+function SecondaryBtn({
   style,
   btnText,
   btnIcon
@@ -13,11 +13,11 @@ function PrimaryBtn({
     icon = "";
   }
   return (
-    <button className={`${style} py-3 px-4 bg-primary-2 rounded text-primary-4 flex gap-2 items-center hover:bg-[#1D905E] active:bg-primary-1`}>
+    <button className={`${style} py-3 px-4 text-secondary-1 text-button bg-primary-4 rounded hover:outline-white hover:text-primary-2 active:bg-primary-3`}>
       <span>{btnText}</span>
       {icon}
     </button>
   )
 }
 
-export default PrimaryBtn
+export default SecondaryBtn

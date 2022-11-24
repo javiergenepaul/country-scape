@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { blogs } from '../constants'
+import BlogCard from './UI/BlogCard'
 // import { ArrowNarrowRightOutline, ArrowNarrowLeftOutline } from '../assets'
 
 function Blog() {
@@ -41,8 +42,6 @@ function Blog() {
 
 		document.getElementById('slider').addEventListener('scroll', onScroll);
 		setScrollEnd(document.getElementById('slider').scrollWidth - document.getElementById('slider').offsetWidth);
-		// return () => window.removeEventListener('scroll', onScroll);
-
 	}, [scrollValue, scrollEnd]);
 
 	return (
@@ -66,18 +65,7 @@ function Blog() {
 			<div className="relative flex items-center">
 				<div id='slider' className="overflow-x-scroll h-full w-full scroll whitespace-nowrap scroll-smooth scrollbar-hide">
 					{blogs.map((item) => (
-						<div className="inline-block first:pl-0 last:pr-0 p-2">
-							<div className="relative">
-								<div className="absolute top-0 left-0 w-full h-full bg-shade"></div>
-								<div className="absolute bottom-0 left-0 m-8">
-									<div className="flex flex-col">
-										<span className='text-body-normal font-semibold text-[#FFF]'>{item.date.toLocaleDateString('en-US', { day: '2-digit' ,month: 'long' })	}</span>
-										<span className='text-body-normal text-[#FFF]'>{item.description}</span>
-									</div>
-								</div>
-								<img className='ease-in-out duration-300' key={item.id} src={item.image} alt={item.id} />
-							</div>
-						</div>
+						<BlogCard item={item} id={item.id} key={item.id} />
 					))}
 				</div>
 			</div>

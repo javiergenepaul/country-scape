@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import { testimonials } from '../constants'
 import { testimonial_logo } from '../assets'
+import TestimonialCard from './UI/TestimonialCard'
 
 function Testimonial() {
-
 	const slideLeft = () => {
 		const slider = document.getElementById('testimonial-slider');
 		slider.scrollLeft = slider.scrollLeft - 500;
@@ -43,7 +43,6 @@ function Testimonial() {
 		setScrollEnd(document.getElementById('testimonial-slider').scrollWidth - document.getElementById('testimonial-slider').offsetWidth);
 	}, [scrollValue, scrollEnd]);
 
-
 	return (
 		<div className='flex items-center'>
 			<div className="basis-4/12 flex flex-col gap-4">
@@ -68,17 +67,7 @@ function Testimonial() {
 				<div className="relative flex items-center">
 					<div id='testimonial-slider' className="overflow-x-scroll h-full w-full scroll-smooth scroll whitespace-nowrap scrollbar-hide px-4 py-10">
 						{testimonials.map((item) => (
-							<div className="inline-block first:pl-0 last:pr-0 p-2 whitespace-normal">
-								<div className="relative max-w-[240px] px-6 py-8">
-									<div className="absolute bottom-0 left-0 bg-white rounded drop-shadow-testimonial-sh w-full h-[80%] z-0"></div>
-									<div className="relative flex flex-col items-center gap-2 z-10">
-										<img className='w-[72px] h-[72px]' key={item.id} src={item.avatar} alt={item.id} />
-										<img src={testimonial_logo} alt="" />
-										<h2 className='text-subheading text-black'>{item.name}</h2>
-										<span className='text-center text-secondary-4'>{item.statement}</span>
-									</div>
-								</div>
-							</div>
+							<TestimonialCard item={item} key={item.id}/>
 						))}
 					</div>
 				</div>

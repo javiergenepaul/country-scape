@@ -1,5 +1,6 @@
 import React from 'react'
 import { countryscape_logo, countryscape_name } from '../assets'
+import SecondaryBtn from './UI/SecondaryBtn'
 
 function Nav() {
 	return (
@@ -10,13 +11,14 @@ function Nav() {
 			</div>
 			<div className="flex items-center gap-x-8">
 				<ul className='flex gap-x-8 text-body-normal'>
-					<li>Home</li>
-					<li>Room</li>
-					<li>About</li>
-					<li>Explore</li>
-					<li>Blog</li>
+					<li className='cursor-pointer hover:underline hover:underline-offset-4'>Home</li>
+					<li className='cursor-pointer hover:underline hover:underline-offset-4'>Room</li>
+					<li className='cursor-pointer hover:underline hover:underline-offset-4'>About</li>
+					<li className='cursor-pointer hover:underline hover:underline-offset-4'>Explore</li>
+					<li className='cursor-pointer hover:underline hover:underline-offset-4'>Blog</li>
 				</ul>
-				<button className='py-3 px-4 text-secondary-1 text-button bg-primary-4 rounded'>Book Now</button>
+				<SecondaryBtn btnText={'Book Now'} btnIcon=""/>
+				{/* <button className='secondary-btn'>Book Now</button> */}
 			</div>
 		</div>
 	)

@@ -3,3 +3,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .primary-btn {
+        @apply py-3 px-4 text-secondary-1 text-button bg-primary-4 rounded
+            hover:outline-white 
+            hover:text-primary-2
+            active:bg-primary-3
+    }
+
+    .secondary-btn {
+        @apply py-3 px-4 text-secondary-1 text-button bg-primary-4 rounded
+            hover:outline-white 
+            hover:text-primary-2
+            active:bg-primary-3
+    }
+}
