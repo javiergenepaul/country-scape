@@ -17,10 +17,16 @@ import linkin from './icons/linkin.svg'
 import twitter from './icons/twitter.svg'
 import ArrowNarrowRightOutline from './icons/ArrowNarrowRightOutline.svg'
 import ArrowNarrowLeftOutline from './icons/ArrowNarrowLeftOutline.svg'
+import testimonial_logo from './icons/testimonial_logo.svg'
 
 import blog1 from './blog/blog1.png'
 import blog2 from './blog/blog2.png'
 import blog3 from './blog/blog3.png'
+
+import testimonial_1 from './testimonials/testimonial-1.png'
+import testimonial_2 from './testimonials/testimonial-2.png'
+import testimonial_3 from './testimonials/testimonial-3.png'
+import testimonial_4 from './testimonials/testimonial-4.png'
 
 
 export {
@@ -43,5 +49,10 @@ export {
     blog2,
     blog3,
     ArrowNarrowRightOutline,
-    ArrowNarrowLeftOutline
+    ArrowNarrowLeftOutline,
+    testimonial_1,
+    testimonial_2,
+    testimonial_3,
+    testimonial_4,
+    testimonial_logo
 }

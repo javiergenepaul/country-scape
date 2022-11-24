@@ -1,5 +1,3 @@
-
-
 import {     
     Nav,
     Hero,
@@ -38,8 +36,8 @@ function App() {
             <div className="max-w-[1180px] mx-auto w-full py-24">
                 <Blog />
             </div>
-            <div className="">
-                Testimonial
+            <div className="max-w-[1180px] mx-auto w-full py-24">
+                <Testimonial />
             </div>
             <div className="py-10 bg-primary-1">
                 <div className="max-w-[1180px] mx-auto w-full h-full">

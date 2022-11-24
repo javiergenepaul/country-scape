@@ -1,4 +1,4 @@
-import { blog1, blog2, blog3 } from '../assets'
+import { blog1, blog2, blog3, testimonial_1, testimonial_2, testimonial_3, testimonial_4 } from '../assets'
 
 export const blogs = [
     {
@@ -38,3 +38,31 @@ export const blogs = [
         image: blog3
     },
 ];
+
+
+export const testimonials = [
+    {
+        id: 1,
+        name: "Jenny Wilson",
+        avatar: testimonial_3,
+        statement: "Lorem ipsum dolor sit amet, consectetur adi piscing elit. Ac morbi ali quet liber arcu.",
+    },
+    {
+        id: 2,
+        name: "Kathryn Murphy",
+        avatar: testimonial_1,
+        statement: "Lorem ipsum dolor sit amet, consectetur adi piscing elit. Ac morbi ali quet liber arcu.",
+    },
+    {
+        id: 3,
+        name: "Wade Warren",
+        avatar: testimonial_2,
+        statement: "Lorem ipsum dolor sit amet, consectetur adi piscing elit. Ac morbi ali quet liber arcu.",
+    },
+    {
+        id: 4,
+        name: "Esther Howard",
+        avatar: testimonial_4,
+        statement: "Lorem ipsum dolor sit amet, consectetur adi piscing elit. Ac morbi ali quet liber arcu.",
+    },
+];  

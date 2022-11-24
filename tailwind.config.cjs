@@ -33,13 +33,18 @@ module.exports = {
 				3: "#626A66",
 				4: "#A4ADA9",
 				5: "#C5CCC9"
-			}
+			},
+			black: "#000",
+			white: "#FFF"
 		},
 		extend: {
 			backgroundImage: {
 				hero: "url('./assets/hero_background_image.png')",
 				discovery: "url('./assets/discovery_background_img.png')",
 				shade: "linear-gradient(180deg, rgba(20, 31, 26, 0) 0%, rgba(20, 31, 26, 0.61) 100%);"
+			},
+			dropShadow: {
+				"testimonial-sh": '0px 4px 12px rgba(0, 0, 0, 0.1)',
 			}
 		},
 	},
