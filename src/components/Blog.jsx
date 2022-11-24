@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { blogs } from '../constants'
-import { ArrowNarrowRightOutline, ArrowNarrowLeftOutline } from '../assets'
+// import { ArrowNarrowRightOutline, ArrowNarrowLeftOutline } from '../assets'
 
 function Blog() {
 	const slideLeft = () => {
@@ -28,7 +28,7 @@ function Blog() {
 		if (scrollValue == 0) {
 			setprevBtnStrokeColor('stroke-secondary-5');
 			setprevBtnBorderColor('border-secondary-5');
-		} else if(scrollValue == scrollEnd) {
+		} else if (scrollValue == scrollEnd) {
 			setNexBtnStrokeColor('stroke-secondary-5');
 			setNexBtnBorderColor('border-secondary-5');
 		} else {
@@ -42,15 +42,15 @@ function Blog() {
 		document.getElementById('slider').addEventListener('scroll', onScroll);
 		setScrollEnd(document.getElementById('slider').scrollWidth - document.getElementById('slider').offsetWidth);
 		// return () => window.removeEventListener('scroll', onScroll);
-	
+
 	}, [scrollValue, scrollEnd]);
 
 	return (
 		<div>
-			<div className="flex justify-between">
-				<span className='text-h3 font-medium'>latest Blog</span>
+			<div className="flex justify-between pb-8">
+				<span className='text-h3 text-secondary-1 font-medium'>Latest Blog</span>
 				<div className="flex gap-2">
-					
+
 					<button className={`p-2 border rounded-lg ${prevBtnBorderColor}`} onClick={slideLeft}>
 						<svg className={`stroke-2 rounded ${prevBtnStrokeColor}`} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M7 16L3 12M3 12L7 8M3 12H21" />
@@ -64,9 +64,20 @@ function Blog() {
 				</div>
 			</div>
 			<div className="relative flex items-center">
-				<div id='slider' className="overflow-x-scroll h-full w-full scroll whitespace-nowrap scroll-smooth">
+				<div id='slider' className="overflow-x-scroll h-full w-full scroll whitespace-nowrap scroll-smooth scrollbar-hide">
 					{blogs.map((item) => (
-						<img className='inline-block first:pl-0 last:pr-0 p-4 ease-in-out duration-300' key={item.id} src={item.image} alt={item.id} />
+						<div className="inline-block first:pl-0 last:pr-0 p-2">
+							<div className="relative">
+								<div className="absolute top-0 left-0 w-full h-full bg-shade"></div>
+								<div className="absolute bottom-0 left-0 m-8">
+									<div className="flex flex-col">
+										<span className='text-body-normal font-semibold text-[#FFF]'>{item.date.toLocaleDateString('en-US', { day: '2-digit' ,month: 'long' })	}</span>
+										<span className='text-body-normal text-[#FFF]'>{item.description}</span>
+									</div>
+								</div>
+								<img className='ease-in-out duration-300' key={item.id} src={item.image} alt={item.id} />
+							</div>
+						</div>
 					))}
 				</div>
 			</div>
