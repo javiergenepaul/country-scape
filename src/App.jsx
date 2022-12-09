@@ -18,8 +18,9 @@ function App() {
                     <Nav />
                 </div>
             </div>
-            {/* <div className="bg-primary-3 h-screen relative bg-hero bg-contain bg-right bg-no-repeat">
-                <div className="max-w-[1180px] mx-auto">
+            <div className="bg-primary-3 h-screen relative bg-hero sm:bg-contain bg-cover bg-right bg-no-repeat">
+                <div className="absolute top-0 left-0 h-full w-full bg-shade z-0 sm:hidden block"></div>
+                <div className="max-w-[1180px] mx-auto z-10 relative">
                     <Hero />
                 </div>
             </div>
@@ -43,7 +44,7 @@ function App() {
                 <div className="max-w-[1180px] mx-auto w-full h-full">
                     <Footer/>
                 </div>
-            </div> */}
+            </div>
         </div>
     )
 }

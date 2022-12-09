@@ -48,8 +48,8 @@ module.exports = {
 			}
 		},
 		screens: {
-			...defaultTheme.screens
-		}
+			...defaultTheme.screens,
+        }
 	},
 	plugins: [
 		require('@tailwindcss/line-clamp'),

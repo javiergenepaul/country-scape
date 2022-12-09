@@ -19,8 +19,8 @@ function Nav() {
 					<li className='cursor-pointer hover:underline hover:underline-offset-4'>Blog</li>
 				</ul>
 				<SecondaryBtn style={'sm:block hidden'} btnText={'Book Now'} btnIcon=""/>
-				<button>
-					<Icon Icon icon="charm:menu-hamburger" className='sm:hidden block hover:text-secondary-2' />
+				<button className='sm:hidden block'>
+					<Icon Icon icon="charm:menu-hamburger" className='hover:text-secondary-2'/>
 				</button>
 			</div>
 		</div>
