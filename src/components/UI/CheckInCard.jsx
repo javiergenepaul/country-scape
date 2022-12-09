@@ -21,7 +21,7 @@ function CheckInCard() {
 			<div className='flex flex-col w-[120px]'>
 				<div className="flex text-body-normal items-center gap-2">
 					<img src={calendar} className="h-[18px] w-[18px]" alt="" />
-					<div className="">Ceck in</div>
+					<div className="">Check in</div>
 				</div>
 				<div className="flex justify-end text-[#8A8F8D]">
 					24 May, 2020

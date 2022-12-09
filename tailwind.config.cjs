@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
 	content: [
 		"./index.html",
@@ -47,6 +47,9 @@ module.exports = {
 				"testimonial-sh": '0px 4px 12px rgba(0, 0, 0, 0.1)',
 			}
 		},
+		screens: {
+			...defaultTheme.screens
+		}
 	},
 	plugins: [
 		require('@tailwindcss/line-clamp'),

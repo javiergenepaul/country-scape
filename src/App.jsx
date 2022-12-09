@@ -13,12 +13,12 @@ import { hero_background_image } from './assets'
 function App() {
     return (
         <div className="App font-inter relative">
-            <div className='p-[14px] bg-primary-1 text-primary-4 items-center absolute top-0 w-full z-10'>
-                <div className="max-w-[1180px] mx-auto">
+            <div className='bg-primary-1 text-primary-4 items-center absolute top-0 left-0 w-full z-10'>
+                <div className="xl:max-w-[1180px] mx-auto py-4">
                     <Nav />
                 </div>
             </div>
-            <div className="bg-primary-3 h-screen relative bg-hero bg-contain bg-right bg-no-repeat">
+            {/* <div className="bg-primary-3 h-screen relative bg-hero bg-contain bg-right bg-no-repeat">
                 <div className="max-w-[1180px] mx-auto">
                     <Hero />
                 </div>
@@ -43,7 +43,7 @@ function App() {
                 <div className="max-w-[1180px] mx-auto w-full h-full">
                     <Footer/>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
